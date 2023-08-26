@@ -6,16 +6,22 @@ pipeline {
     }
 
     stages {
+        stage ('Clean workspace') {
+          steps {
+            cleanWs()
+          }
+        }
+
         stage('checkout') {
             steps {
                 checkout scm
             }
         }
-
-        stage('First Stage') {
-            steps {
-                echo "Yay! First stage is executed"
-            }
+        
+        stage('Restore packages') {
+          steps {
+            bat "dotnet restore ${workspace}\\BarberPlataform\\BarberPlatform.sln"
+          }
         }        
     }
     
