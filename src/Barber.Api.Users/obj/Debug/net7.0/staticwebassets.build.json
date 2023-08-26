@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "7AdBqFdthO0O1pq+CBEQy4m5xclxDAQpVrdFgroRcZQ=",
+  "Source": "Barber.Api.Users",
+  "BasePath": "_content/Barber.Api.Users",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
