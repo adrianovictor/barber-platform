@@ -11,11 +11,12 @@ pipeline {
                 checkout scm
             }
         }
-    }
 
-    stage('First Stage') {
-        steps {
-            echo "Yay! First stage is executed"
-        }
-    }    
+        stage('First Stage') {
+            steps {
+                echo "Yay! First stage is executed"
+            }
+        }        
+    }
+    
 }
