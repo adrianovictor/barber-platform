@@ -1,5 +1,21 @@
-stage ('Clean workspace') {
-  steps {
-    cleanWs()
-  }
+pipeline {
+    agent any
+
+    options {
+        skipDefaultCheckout true
+    }
+
+    stages {
+        stage('checkout') {
+            steps {
+                checkout scm
+            }
+        }
+    }
+
+    stage('First Stage') {
+        steps {
+            echo "Yay! First stage is executed"
+        }
+    }    
 }
